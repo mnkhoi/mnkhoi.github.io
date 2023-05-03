@@ -2,7 +2,6 @@ import { FC } from 'react'
 import React from 'react'
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink, NavigationMenuItem, navigationMenuTriggerStyle } from './ui/navigation-menu';
 import Link from 'next/link';
-import Image from 'next/image';
 import Logo from './Logo';
 import { Button } from './ui/button';
 
@@ -11,7 +10,7 @@ interface NavBarProps {
   logo: string;
 }
 
-const NavBar: FC<NavBarProps> = ({ logo, name }) => {
+const NavBar: FC<NavBarProps> = () => {
   return (
   <div className='flex flex-row justify-between align-middle w-full'>
     <Logo name='Khoi Nguyen'/>
