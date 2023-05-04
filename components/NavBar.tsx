@@ -7,12 +7,13 @@ import { Button } from './ui/button';
 
 interface NavBarProps {
   name?: string;
-  logo: string;
+  logo?: string;
+  [otherProps: string] : any;
 }
 
-const NavBar: FC<NavBarProps> = () => {
+const NavBar: FC<NavBarProps> = ({ otherProps }) => {
   return (
-  <div className='flex flex-row justify-between align-middle w-full'>
+  <div className='flex flex-row justify-between align-middle w-full ' {...otherProps} >
     <Logo name='Khoi Nguyen'/>
 
     <div className="right flex gap-2">
