@@ -17,7 +17,7 @@ const Start = () => {
         </h3>
 
         <p className='mt-6 w-1/2 font-light'>
-            I am a computer science student with working experience in full stack development. Currently, I'm focused on learning about computer systems and security.
+            I am a computer science student with working experience in full stack development. Currently, I&aposm focused on learning about computer systems and security.
         </p>
 
         <Button className='mt-6 text-lg py-7 px-10'>

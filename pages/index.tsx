@@ -5,7 +5,7 @@ import About from '@/components/About'
 import Work from '@/components/Work'
 import Footer from '@/components/Footer'
 import Scroll from '@/components/Scroll'
-import { useState, ReactNode, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
