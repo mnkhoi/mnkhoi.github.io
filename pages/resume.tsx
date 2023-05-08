@@ -1,4 +1,10 @@
+import Head from "next/head";
 
 export default function Resume() {
-    return <iframe src="/resume.pdf" className="w-full h-full fixed" />
+    return <>
+        <Head>
+            <title> Khoi Nguyen Resume</title>
+        </Head>
+        <iframe src="/resume.pdf" className="w-full h-full fixed" />
+    </>
 }

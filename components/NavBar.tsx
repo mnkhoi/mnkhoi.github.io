@@ -13,7 +13,7 @@ interface NavBarProps {
 
 const NavBar: FC<NavBarProps> = ({ otherProps }) => {
   return (
-  <div className='flex flex-row justify-between align-middle w-full ' {...otherProps} >
+  <div className='flex flex-row justify-between align-middle w-full px-60' {...otherProps} >
     <Logo name='Khoi Nguyen'/>
 
     <div className="right flex gap-2">
