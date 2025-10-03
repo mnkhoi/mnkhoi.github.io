@@ -1,0 +1,17 @@
+@layer base, utils, components;
+
+@import 'tailwindcss';
+
+@import '@webtui/css/base.css';
+@import '@webtui/css/components/typography.css';
+/* ... */
+
+@import '@webtui/plugin-nf';
+@import '@webtui/theme-catppuccin';
+
+@layer base {
+*,::after,::before,::backdrop,::file-selector-button {  box-sizing: border-box;  border: 0 solid;}
+  :root {
+    --font-family: Menlo, Monaco, monospace, "Symbols Nerd Font";
+  }
+}

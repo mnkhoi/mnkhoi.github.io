@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../layouts/Container.astro";
+---
+
+<Layout>
+  <Container
+    class:list={[
+      "flex",
+      "flex-col",
+      "items-center",
+      "gap-6",
+      "p-10",
+      "lg:pt-20",
+    ]}
+  >
+    <h1 class="text-4xl">Khoi's Den</h1>
+    <div class="flex flex-col gap-4 lg:w-200">
+      <p>Hi!!!</p>
+      <p>Welcome to my site, I don't know why you are here but....</p>
+      <p>
+        I am going to make it simple. I am Khoi, a 4th year Computer Science and
+        Mathematics student at <a href="https://www.utoronto.ca/"
+          >University of Toronto<a></a>
+        </a>
+      </p>
+      <p>
+        I previously interned at <a href="https://www.amd.com">AMD</a> as a RTG SOC
+        DEV infrastructure engineer. Basically, I make tools for the team.
+      </p>
+      <p>
+        I am really interested in fantasy football and basketball, some
+        investing here and there. And doom scrolling through LinkedIn.
+      </p>
+      <p>
+        In terms of technologies, I am <i>really <strong>really</strong> </i>
+        in compiler and computer languages work and distributed system... and operating
+        system and ... making things and ... idk. Too much ....
+      </p>
+      <p>But I like to deliver useful products for stakeholders the most :D</p>
+      <p>If you want to learn more about me.</p>
+      <p>PS. I like clean websites - straight to the point -</p>
+      <div class="mt-6">
+        <h2 class="text-xl mb-2">Connect with me</h2>
+        <ul marker-="tree">
+          <li>
+            <strong>Linkedin</strong>: <a
+              href="https://www.linkedin.com/in/mnkhoi">@mnkhoi</a
+            >
+          </li>
+          <li>
+            <strong>Github</strong>: <a href="https://www.github.com/mnkhoi"
+              >@mnkhoi</a
+            >
+          </li>
+          <li>
+            <strong>Email</strong>: <a href="mailto://bob.k.nguyen@gmail.com"
+              >bob.k.nguyen@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Container>
+</Layout>
