@@ -1,0 +1,54 @@
+---
+import CommandLine from "./CommandLine.astro";
+import CommandLineOut from "./CommandLineOut.astro";
+---
+
+<div
+  class="hidden
+  lg:flex
+   lg:flex-col
+  rounded-md border border-background2 h-96 xl:w-200 lg:w-full shadow-xl shadow-background2"
+>
+  <div
+    class="flex flex-row gap-2
+    bg-background1
+    rounded-t-md
+    px-4
+    py-2
+    border-b
+    border-background2"
+  >
+    <div class="h-2 w-2 rounded-full bg-red"></div>
+    <div class="h-2 w-2 rounded-full bg-yellow"></div>
+    <div class="h-2 w-2 rounded-full bg-green"></div>
+  </div>
+  <div class="rounded-b-md p-4 bg-[var(--background0)] flex-1">
+    <CommandLine> cd cv/ </CommandLine>
+    <CommandLine folder="cv"> cat instructions.txt </CommandLine>
+    <CommandLineOut
+      >&#x1F601; Press enter to join my tmux sesion
+    </CommandLineOut>
+    <CommandLine>
+      tmux attach -t resume<span class="cursor">█</span>
+    </CommandLine>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .cursor {
+    color: var(--color-foreground0);
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+</style>

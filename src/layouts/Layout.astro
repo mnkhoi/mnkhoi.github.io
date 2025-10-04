@@ -9,7 +9,7 @@ import "../style/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Khoi's Den</title>
+    <title>Khoi's Terminal</title>
   </head>
   <body>
     <slot />
@@ -17,9 +17,12 @@ import "../style/global.css";
 </html>
 
 <style>
-  html,
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
   body {
-    margin: 0;
     width: 100%;
     height: 100%;
   }
