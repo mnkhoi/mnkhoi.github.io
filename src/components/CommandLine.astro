@@ -1,0 +1,14 @@
+---
+const { folder } = Astro.props;
+---
+
+<div class="mt-4">
+  <strong>{folder || "mnkhoi"}</strong>
+  <span class="text-[var(--red)]">[&#xef0c;]</span> via
+  <span class="text-[var(--blue)]">&#xe627;</span> underwent <span
+    class="text-[var(--yellow)]">2s</span
+  >
+  <br />
+  <span class="mr-4 text-[var(--green)]"> &#xf061; </span>
+  <slot />
+</div>
